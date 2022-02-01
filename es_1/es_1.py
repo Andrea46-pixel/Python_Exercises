@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-input = int(input("Inserisci un numero: "))
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-if input>0:
-    print(f"Il numero successivo di {input} è {input+1}")
-else: 
-    print("N deve essere maggiore di 0")
+while True:
+    n = float(input("Inserisci un numero: "))
+    if float.is_integer(n)==True and n>0:
+        n=int(n)
+        break
+    print("Valori non accettabili. Requisiti: n>0 e intero")
 
-
+print(f"Il numero successivo di {n} è {n+1}")
