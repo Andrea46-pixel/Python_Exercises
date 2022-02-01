@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-input = int(input("Inserisci un numero: "))
+while True:
+    n = float(input("Inserisci un numero: "))
+    if float.is_integer(n)==True and n>0:
+        n=int(n)
+        break
+    print("Valori non accettabili. Requisiti: n>0 e intero")
 
-print(f"Numeri pari fino a {input}")
-
-if input>0:
-    for numeri in range(input+1):
+for numeri in range(n+1):
         if(numeri%2 ==0):
             print(numeri)
-else: 
-    print("N deve essere maggiore di 0")
